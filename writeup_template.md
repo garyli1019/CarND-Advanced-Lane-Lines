@@ -113,4 +113,5 @@ Here's a [link to my video result](./project_video_out.mp4)
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+The pipeline I implemented only worked well for the project video, when applied to the chanllenge video, the lane was sometime shifted to incorrect directions. I think it was because the lighting condition and road condition make the camera image has less color contrast, which will make it harder to find the lanes since we are using color information. 
+To make it more robust, I will need to experiment more color space and different combinations of gradient and color. Additionally, I can set a limitation for poly function changes between frames, or use combination of previous poly functions to averaging a new one.
